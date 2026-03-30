@@ -1,2 +1,11 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<div class="max-w-2xl mx-auto mt-16 text-center">
+  <h1 class="text-4xl font-bold mb-4">Welcome to TaskFlow</h1>
+  <p class="text-gray-600 mb-8">Organize your projects and tasks with ease.</p>
+
+  <% if user_signed_in? %>
+    <%= link_to "Go to My Projects", projects_path, class: "bg-blue-500 text-white px-6 py-3 rounded-lg text-lg" %>
+  <% else %>
+    <%= link_to "Get Started", new_user_registration_path, class: "bg-blue-500 text-white px-6 py-3 rounded-lg text-lg mr-4" %>
+    <%= link_to "Sign In", new_user_session_path, class: "border border-blue-500 text-blue-500 px-6 py-3 rounded-lg text-lg" %>
+  <% end %>
+</div>

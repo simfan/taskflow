@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  description: MyText
+  due_date: 2026-03-30
+  status: 1
+  project: one
+  assigned_to: one
+  assigned_to_type: Assigned to
+
+two:
+  title: MyString
+  description: MyText
+  due_date: 2026-03-30
+  status: 1
+  project: two
+  assigned_to: two
+  assigned_to_type: Assigned to
